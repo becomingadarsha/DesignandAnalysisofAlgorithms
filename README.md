@@ -109,10 +109,15 @@ Completeness (CNF-SAT, Vertex Cover and Subset Sum)
 
 **Laboratory Work:**
 This course can be learnt in effective way only if we give focus is given in practical aspects of algorithms and techniques discussed in class. Therefore student should be able to implement the algorithms and analyze their behavior. Students should:
+
 :pushpin: Implement comparison sorting algorithms and perform their empirical analysis.
+
 :pushpin: Implement divide-and-conquer sorting algorithms and perform their empirical analysis.
+
 :pushpin: Implement algorithms for order statistics and perform their empirical analysis.
+
 :pushpin: Implement algorithms by using Greedy, DP and backtracking paradigm
+
 :pushpin: Implement NP-complete problems and realize their hardness.
 
 ---
