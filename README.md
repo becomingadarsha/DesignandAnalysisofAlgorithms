@@ -3,9 +3,13 @@
 ---
 __Before we Start__
  The programs in this repo generates the running time of algorithm and it might vary from machine to machine as it depends on multiple factors : 
+ 
 :zap: Single vs Multi Processor
+
 :zap: Read/Write Speed to Memory
+
 :zap: 32 bit vs 64 bit
+
 :zap: Input
 
 ___:hammer: But for Time Complexity Analysis we only bother about Input. 
@@ -13,9 +17,13 @@ ___:hammer: But for Time Complexity Analysis we only bother about Input.
 
 To do so, we first define the hypothetical model machine with given characteristics : 
 :arrow_right: Single Processor
+
 :arrow_right: 32 bit
+
 :arrow_right: Sequential Execution
+
 :arrow_right: 1 unit for time for Arithmetic and Logical Operations
+
 :arrow_right: 1 unit for time for Assignments and return
 
 ___:exclamation: All other costs are negligible and we don't account for it.___
@@ -38,10 +46,15 @@ Tribuvan University
 ---
 
 **Course Objectives:
+
 :cyclone: Analyze the asymptotic performance of algorithms.
+
 :cyclone: Demonstrate a familiarity with major algorithm design techniques
+
 :cyclone: Apply important algorithmic design paradigms and methods of analysis.
+
 :cyclone: Solve simple to moderately difficult algorithmic problems arising in applications.
+
 :cyclone: Able to demonstrate the hardness of simple NP-complete problems**
 
 ---
