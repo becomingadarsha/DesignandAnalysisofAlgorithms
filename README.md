@@ -45,7 +45,7 @@ Tribuvan University
 
 ---
 
-**Course Objectives:
+**Course Objectives:**
 
 :cyclone: Analyze the asymptotic performance of algorithms.
 
