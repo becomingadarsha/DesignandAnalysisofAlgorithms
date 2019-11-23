@@ -2,54 +2,54 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define SIZE 200
+
 
 void mergeArray(int *arr, int start, int mid, int end) {
-    int i, j, k;
-    int n1 = mid - start + 1; // length of left part array
-    int n2 = end - mid; // len of right part of arr
-
-    int L[n1], R[n2]; // left and right array
-
-    for (i = 0; i < n1; i++)
-    {
-       L[i] = arr[start + i];
-    }
+    int i = start;
+    int j = mid + 1;
+    int k = start ; // for new array initial symbol
+    int temp[start+end]; // temporary array to store new  combined values
     
-    for (j = 0; j < n2; j++)
-    {
-       R[j] = arr[mid + 1 + j];
-    }
+    while( (i <= mid) && (j <= end) ) {
 
-    i = 0;
-    j = 0;
-    k = start;
-
-    while(i < n1 && j < n2) {
-        if(L[i] <= R[j]) {
-            arr[k] = L[i];
-            i++ ;
-        }   else {
-            arr[k] = R[j];
-            j++;
+        if(arr[i] < arr[j]) {
+            temp[k] = arr[i];
+            i++; k++; 
         }
-        k++;
+        else{ 
+            //(arr[j] < arr[i]) 
+            temp[k] = arr[j];
+            j++; k++;
+        }
+
     }
 
-    // checks if some elemnts are remaining in left array
-    while (i < n1) 
-    { 
-        arr[k] = L[i]; 
-        i++; 
-        k++; 
-    } 
 
- // checks if some elemnts are remaining in right array
-    while (j < n2) 
-    { 
-        arr[k] = R[j]; 
-        j++; 
-        k++; 
-    } 
+    //if arr[i] is finished but some ele of arr[j] is remaining
+    if(i > mid) {
+
+        while(j <= end) {
+            temp[k] = arr[j];
+            j++; k++;
+        }
+    }
+
+    // if arr[j] is finished but some ele of arr[i] remains to sort
+    if(j > end) {
+           while(i <= mid) 
+           {
+                temp[k] = arr[i];
+                i++; k++;
+           }
+    }
+
+    // copying sorted value from temp arr to OG array, k = index of new array
+    for (int a = start; a < k; a++)
+    {
+        arr[a] = temp[a];
+    }
+     
 }
 
 
@@ -66,7 +66,7 @@ void mergeSort(int *arr, int start, int end)
 
 int main(int argc, char const *argv[])
 {
-    int arr[100], n;
+    int arr[SIZE], n;
     clock_t start, end;
     double total_time = 0.00;
 

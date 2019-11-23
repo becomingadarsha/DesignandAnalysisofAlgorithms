@@ -8,7 +8,8 @@ __Before we Start__
 :zap: 32 bit vs 64 bit
 :zap: Input
 
-___:hammer: But for Time Complexity Analysis we only bother about Input. 
+___:hammer: But for Time Complexity Analysis we only bother about Input.
+ 
 :hammer: How the time is taken by program grows with the growth of inputs ?___
 
 To do so, we first define the hypothetical model machine with given characteristics : 
