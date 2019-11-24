@@ -4,7 +4,6 @@
 
 #define SIZE 200
 
-
 void mergeArray(int *arr, int start, int mid, int end) {
     int i = start;
     int j = mid + 1;

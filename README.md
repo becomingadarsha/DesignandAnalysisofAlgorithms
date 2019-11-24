@@ -8,9 +8,9 @@ __Before we Start__
 :zap: 32 bit vs 64 bit
 :zap: Input
 
-___:hammer: But for Time Complexity Analysis we only bother about Input.
+But for Time Complexity Analysis we only bother about Input.
  
-:hammer: How the time is taken by program grows with the growth of inputs ?___
+__:hammer: How the time taken by program grows with the growth of inputs ?__
 
 To do so, we first define the hypothetical model machine with given characteristics : 
 :arrow_right: Single Processor
@@ -19,8 +19,12 @@ To do so, we first define the hypothetical model machine with given characterist
 :arrow_right: 1 unit for time for Arithmetic and Logical Operations
 :arrow_right: 1 unit for time for Assignments and return
 
+
 ___:exclamation: All other costs are negligible and we don't account for it.___
 
+
+___:exclamation: What is the main purpose of studying DAA ? 
+➝ According to principle of Software Engineering, before implementing any program we have to design different algorithms to solve that problem and analyse the algorithms on basis of Time && Space. After designing and analysing, we choose best algorithm ad implement it as a program.That is main purpose of Design and Analysis of Algorithm.___ 
 
 ---
 
