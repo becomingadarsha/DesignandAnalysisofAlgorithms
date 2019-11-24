@@ -3,9 +3,13 @@
 ---
 __Before we Start__
  The programs in this repo generates the running time of algorithm and it might vary from machine to machine as it depends on multiple factors : 
+ 
 :zap: Single vs Multi Processor
+
 :zap: Read/Write Speed to Memory
+
 :zap: 32 bit vs 64 bit
+
 :zap: Input
 
 But for Time Complexity Analysis we only bother about Input.
@@ -14,9 +18,13 @@ __:hammer: How the time taken by program grows with the growth of inputs ?__
 
 To do so, we first define the hypothetical model machine with given characteristics : 
 :arrow_right: Single Processor
+
 :arrow_right: 32 bit
+
 :arrow_right: Sequential Execution
+
 :arrow_right: 1 unit for time for Arithmetic and Logical Operations
+
 :arrow_right: 1 unit for time for Assignments and return
 
 
@@ -42,11 +50,16 @@ Tribuvan University
 
 ---
 
-**Course Objectives:
+**Course Objectives:**
+
 :cyclone: Analyze the asymptotic performance of algorithms.
+
 :cyclone: Demonstrate a familiarity with major algorithm design techniques
+
 :cyclone: Apply important algorithmic design paradigms and methods of analysis.
+
 :cyclone: Solve simple to moderately difficult algorithmic problems arising in applications.
+
 :cyclone: Able to demonstrate the hardness of simple NP-complete problems**
 
 ---
@@ -114,10 +127,15 @@ Completeness (CNF-SAT, Vertex Cover and Subset Sum)
 
 **Laboratory Work:**
 This course can be learnt in effective way only if we give focus is given in practical aspects of algorithms and techniques discussed in class. Therefore student should be able to implement the algorithms and analyze their behavior. Students should:
+
 :pushpin: Implement comparison sorting algorithms and perform their empirical analysis.
+
 :pushpin: Implement divide-and-conquer sorting algorithms and perform their empirical analysis.
+
 :pushpin: Implement algorithms for order statistics and perform their empirical analysis.
+
 :pushpin: Implement algorithms by using Greedy, DP and backtracking paradigm
+
 :pushpin: Implement NP-complete problems and realize their hardness.
 
 ---
