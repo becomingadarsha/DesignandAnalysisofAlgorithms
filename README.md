@@ -35,7 +35,7 @@ ___:exclamation: All other costs are negligible and we don't account for it.___
 
 ___:exclamation: What is the main purpose of studying DAA ?___
 
-___➝ According to principle of Software Engineering, before implementing any program we have to design different algorithms to solve that problem and analyse the algorithms on basis of Time && Space. After designing and analysing, we choose best algorithm ad implement it as a program.That is main purpose of Design and Analysis of Algorithm.___ 
+___➝  According to principle of Software Engineering, before implementing any program we have to design different algorithms to solve that problem and analyse the algorithms on basis of Time && Space. After designing and analysing, we choose best algorithm ad implement it as a program.That is main purpose of Design and Analysis of Algorithm.___ 
 
 ---
 
