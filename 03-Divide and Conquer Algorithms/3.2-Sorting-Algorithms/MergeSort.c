@@ -2,45 +2,54 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define SIZE 200
+#define SIZE 1000
 
-void mergeArray(int *arr, int start, int mid, int end) {
+void mergeArray(int *arr, int start, int mid, int end)
+{
     int i = start;
     int j = mid + 1;
-    int k = start ; // for new array initial symbol
-    int temp[start+end]; // temporary array to store new  combined values
-    
-    while( (i <= mid) && (j <= end) ) {
+    int k = start;         // for new array initial symbol
+    int temp[start + end]; // temporary array to store new  combined values
 
-        if(arr[i] < arr[j]) {
+    while ((i <= mid) && (j <= end))
+    {
+
+        if (arr[i] < arr[j])
+        {
             temp[k] = arr[i];
-            i++; k++; 
+            i++;
+            k++;
         }
-        else{ 
-            //(arr[j] < arr[i]) 
+        else
+        {
+            //(arr[j] < arr[i])
             temp[k] = arr[j];
-            j++; k++;
+            j++;
+            k++;
         }
-
     }
 
-
     //if arr[i] is finished but some ele of arr[j] is remaining
-    if(i > mid) {
+    if (i > mid)
+    {
 
-        while(j <= end) {
+        while (j <= end)
+        {
             temp[k] = arr[j];
-            j++; k++;
+            j++;
+            k++;
         }
     }
 
     // if arr[j] is finished but some ele of arr[i] remains to sort
-    if(j > end) {
-           while(i <= mid) 
-           {
-                temp[k] = arr[i];
-                i++; k++;
-           }
+    if (j > end)
+    {
+        while (i <= mid)
+        {
+            temp[k] = arr[i];
+            i++;
+            k++;
+        }
     }
 
     // copying sorted value from temp arr to OG array, k = index of new array
@@ -48,14 +57,13 @@ void mergeArray(int *arr, int start, int mid, int end) {
     {
         arr[a] = temp[a];
     }
-     
 }
-
 
 void mergeSort(int *arr, int start, int end)
 {
     int mid;
-    if (start < end) {
+    if (start < end)
+    {
         mid = (start + end) / 2;
         mergeSort(arr, start, mid);
         mergeSort(arr, mid + 1, end);

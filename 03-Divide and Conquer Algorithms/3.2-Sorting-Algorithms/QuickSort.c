@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX 200
+#define MAX 1000
 
 
 void swap(int *x, int *y) {
@@ -59,21 +59,21 @@ int main(int argc, char const *argv[])
 {
     int arr[MAX], n;
     double total_time = 0.0;
-    time_t start, end;
+    time_t begin, end;
 
     printf("Enter number of elements : ");
     scanf("%d", &n);
 
     for (int i = 0; i < n; i++)
     {
-        arr[i] = rand() % 100;
+        arr[i] = rand() % 1000;
     }
     
-    start = clock();
+    begin = clock();
     QuickSort(arr, 0, n-1);
     end = clock();
 
-    total_time += (double)(end - start) / CLOCKS_PER_SEC;
+    total_time += (double)(end - begin) / CLOCKS_PER_SEC;
     printf("Running time : %f seconds", total_time);
 
     printf("\n\nArray after Quick sort : \n");

@@ -2,22 +2,27 @@
 #include<stdlib.h>
 #include<time.h>
 
-void SelectionSort(int *arr, int n) {
-    int i, j, min, temp;
+void swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
 
-    for ( i = 0; i < n - 1; i++)
+void SelectionSort(int *arr, int n) {
+    int i, j, min;
+
+    for (i = 0; i < n - 1; i++)
     {
-        min = i;
-       for (j = i+1; j < n; j++)
+        min = i; // point first element as minimum
+       for (j = i+1; j < n; j++) // move j to next index and compare with the arr[min]
        {
-            if (arr[j] < arr[min]) {
+            if (arr[j] < arr[min]) { // compare min element with j and if found make index of j as minimum
                 min = j;
             }
-       }
+       } // move till the last by comparing j with min
        
-       temp = arr[i];
-       arr[i] = arr[min];
-       arr[min] = temp;
+        // move min element to the first i.e. index of i
+        swap(&arr[i], &arr[min]);
     }
     
 }
