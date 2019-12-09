@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
  
     for (int i = 0; i < n; i++)
     {
-        arr[i] = rand() % 100;
+        arr[i] = rand() % 1000;
     }
 
     start = clock();
@@ -59,7 +59,7 @@ int main(int argc, char const *argv[])
     printf("Min element :  %d\nMax element : %d\n", min, max);
 
     total_time += (double)(end - start) / CLOCKS_PER_SEC;
-    printf("Running time : %f seconds", total_time);
+    printf("Execution time : %f seconds", total_time);
 
     return 0;
 }

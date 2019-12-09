@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
     end = clock();
 
     time_spent += (double)(end - start) / CLOCKS_PER_SEC;
-    printf("Running time : %f seconds", time_spent);
+    printf("Execution time : %f seconds", time_spent);
 
     printf("\n\nArray after Insertion sort : \n");
     for (int i = 0; i < n; i++)

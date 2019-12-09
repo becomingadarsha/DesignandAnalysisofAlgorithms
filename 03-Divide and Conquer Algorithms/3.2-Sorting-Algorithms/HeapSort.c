@@ -78,7 +78,7 @@ int main(int argc, char const *argv[])
     end = clock();
 
     total_time += (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Running time : %f seconds", total_time);
+    printf("Execution time : %f seconds", total_time);
 
     printf("\n\nArray after Quick sort : \n");
     for (int i = 0; i < n; i++)
