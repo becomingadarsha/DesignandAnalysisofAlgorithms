@@ -1,8 +1,32 @@
 ## Course Title : Design and Analysis of Algorithms :computer:
 
 ---
-__Before we Start__
- The programs in this repo generates the running time of algorithm and it might vary from machine to machine as it depends on multiple factors : 
+
+### Before we start..
+
+
+__How to Compare Algorithms?__
+
+
+To compare algorithms, let us define some objective measures.
+
+
+**Execution times?**  Not a good measure as execution times are specific to a particular computer.
+
+
+**Number of statements executed?**  Not a good measure since the number of statements varies with the
+programming language as well as the style of the individual programmer.
+
+
+**Ideal Solution?**
+
+Let us assume that we expressed running time of given algorithm as a function of the input size (i.e.,
+). We can compare these different functions corresponding to running times and this kind of
+comparison is independent of machine time, programming style, etc..
+
+---
+
+ The programs in this repo generates the Execution time of algorithm and it might vary from machine to machine as it depends on multiple factors : 
  
 :zap: Single vs Multi Processor
 
